@@ -42,8 +42,9 @@ go tool mygo build -platform darwin/universal,linux/amd64,windows/amd64
 
 On first launch, open the panel from the menu bar icon and set:
 
-- **API endpoint** — your Umami server, e.g. `https://analytics.example.com`
-  (defaults to Umami Cloud, `https://api.umami.is/v1`)
+- **API endpoint** — defaults to Umami Cloud, `https://api.umami.is/v1`. For a
+  self-hosted server, give its address, e.g. `https://analytics.example.com/api`
+  (`/api` is added for you if you leave it off)
 - **API key** — an Umami API key, from *Settings → API keys*
 
 On macOS the key is kept in the login keychain; elsewhere it is stored in the
